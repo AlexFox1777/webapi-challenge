@@ -12,9 +12,10 @@ function Projects(props) {
 
     return (
         <div>
+            <h1>Projects</h1>
             <Grid container spacing={2}>
                 {console.log('projects -', props.projects)}
-                {props.projects !== [] ? props.projects.map(project =>
+                {props.projects.length !== 0  ? props.projects.map(project =>
                         <Grid xs={12} sm={3} item> <ProjectCard project={project}/></Grid>)
                     : <h1>Hey</h1>
                 }

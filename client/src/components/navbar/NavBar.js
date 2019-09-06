@@ -43,11 +43,8 @@ const NavBar = props => {
             <AppBar className={classes.navBar}>
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        Projects
                     </Typography>
-
-                    <Button component={RouterLink} to="/projects">Projects</Button>
-                    <Button component={RouterLink} to="/projects">Projects</Button>
+                    <LinkButton component={RouterLink} to="/projects">Projects</LinkButton>
                 </Toolbar>
             </AppBar>
         </div>
